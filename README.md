@@ -6,7 +6,7 @@ As you know, this work inspired by the success of generative adversarial network
 We are busy now and try to publish the clean code as soon as possible.
 Please feel free to contact me if you have any questions.
 
-If you find this code useful in your research, please cite:
+If you find this idea useful in your research, please cite:
 ```
 @article{DBLP:journals/corr/abs-1802-09088,
   author    = {Mohammad Sabokrou and
