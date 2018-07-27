@@ -76,7 +76,10 @@ python test.py --dataset MNIST --dataset_address ./mnist/ --input_height 28 --ou
 
 ### Apply a pre-trained model (ALOCC)
 - You can use a pretrained model and locate directory path to train.py or test.py file. 
-- The pretrained model is saved at `./checkpoints/{datasetname}_{batch_size}_{patch_size}
+- The pretrained model is saved at 
+```
+./checkpoints/{datasetname}_{batch_size}_{patch_size}
+```
 - To view test results you can access them from samples directory
 
 <hr>
