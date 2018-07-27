@@ -80,15 +80,21 @@ python test.py --dataset MNIST --dataset_address ./mnist/ --input_height 28 --ou
 
 ####MNIST
 input:
+<br>
 <img src='imgs/MNIST__ALOCC_input.jpg' align="center" width=384>
+<br>
 Generated:
+<br>
 <img src='imgs/MNIST__ALOCC_generated.jpg' align="center" width=384>
 
 
 #### UCSD
 input:
+<br>
 <img src='imgs/UCSD__ALOCC_input.jpg' align="center" width=384>
+<br>
 Generated:
+<br>
 <img src='imgs/UCSD__ALOCC_generated.jpg' align="center" width=384>
 
 
