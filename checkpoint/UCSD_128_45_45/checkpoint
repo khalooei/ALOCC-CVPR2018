@@ -1,0 +1,6 @@
+model_checkpoint_path: "ALOCC_Model.model-5"
+all_model_checkpoint_paths: "ALOCC_Model.model-1"
+all_model_checkpoint_paths: "ALOCC_Model.model-2"
+all_model_checkpoint_paths: "ALOCC_Model.model-3"
+all_model_checkpoint_paths: "ALOCC_Model.model-4"
+all_model_checkpoint_paths: "ALOCC_Model.model-5"
