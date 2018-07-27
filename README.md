@@ -98,11 +98,9 @@ Generated:
 <img src='imgs/UCSD__ALOCC_generated.jpg' align="center" width=384>
 
 
-<br><br><hr>
-If you use this code for your research, please cite:
-
+<hr>
 ## Citation
-If you use this code for your research, please cite our papers.
+If you use this code or idea for your research, please cite our papers.
 ```
 @article{DBLP:journals/corr/abs-1802-09088,
   author    = {Mohammad Sabokrou and
