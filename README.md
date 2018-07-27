@@ -8,7 +8,7 @@ Here is the preliminary version of the code on grayscale databases.
 Please feel free to contact me if you have any questions.
 
 ## overview
-<img src='imgs/overview.jpg' align="center" width=384>
+<p align="center"><img src='imgs/overview.jpg'></p>
 
 **Note**: 
 The current software works well with TensorFlow 1.2
@@ -71,14 +71,14 @@ python test.py --dataset UCSD --dataset_address ./UCSD_Anomaly_Dataset.v1p2/UCSD
 # for test on MNIST
 python test.py --dataset MNIST --dataset_address ./mnist/ --input_height 28 --output_height 28
 ```
-
+<hr>
 ### Apply a pre-trained model (ALOCC)
 - You can use a pretrained model and locate directory path to train.py or test.py file. 
 - The pretrained model is saved at `./checkpoints/{datasetname}_{batch_size}_{patch_size}
 - To view test results you can access them from samples directory
 
-
-####MNIST
+<hr>
+#### MNIST
 input:
 <br>
 <img src='imgs/MNIST__ALOCC_input.jpg' align="center" width=384>
