@@ -71,13 +71,16 @@ python test.py --dataset UCSD --dataset_address ./UCSD_Anomaly_Dataset.v1p2/UCSD
 # for test on MNIST
 python test.py --dataset MNIST --dataset_address ./mnist/ --input_height 28 --output_height 28
 ```
+
 <hr>
+
 ### Apply a pre-trained model (ALOCC)
 - You can use a pretrained model and locate directory path to train.py or test.py file. 
 - The pretrained model is saved at `./checkpoints/{datasetname}_{batch_size}_{patch_size}
 - To view test results you can access them from samples directory
 
 <hr>
+
 #### MNIST
 input:
 <br>
