@@ -5,7 +5,7 @@ As you know, this work inspired by the success of generative adversarial network
 
 Here is the preliminary version of the code on grayscale databases. 
 
-Please feel free to contact [[me]] ( if you have any questions.
+Please feel free to contact me if you have any questions.
 
 ## overview
 <p align="center"><img src='imgs/overview.jpg'></p>
