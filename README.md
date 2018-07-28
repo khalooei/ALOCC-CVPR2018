@@ -5,7 +5,7 @@ As you know, this work inspired by the success of generative adversarial network
 
 Here is the preliminary version of the code on grayscale databases. 
 
-Please feel free to contact me if you have any questions.
+Please feel free to contact [[me]] ( if you have any questions.
 
 ## overview
 <p align="center"><img src='imgs/overview.jpg'></p>
@@ -54,10 +54,10 @@ tar -xzf UCSD_Anomaly_Dataset.tar.gz
 - Config path of dataset and dataset name :
 ```
 # for train on UCSD and patch_size 45*45
-python train.py --dataset UCSD --dataset_address ./UCSD_Anomaly_Dataset.v1p2/UCSDped2/Train --input_height 45 --output_height 45 
+python train.py --dataset UCSD --dataset_address ./dataset/UCSD_Anomaly_Dataset.v1p2/UCSDped2/Train --input_height 45 --output_height 45 
 
 # for train on MNIST
-python train.py --dataset MNIST --dataset_address ./mnist/ --input_height 28 --output_height 28
+python train.py --dataset MNIST --dataset_address ./dataset/mnist/ --input_height 28 --output_height 28
 ```
 
 - To view training results you can access them from export directory
@@ -66,10 +66,10 @@ python train.py --dataset MNIST --dataset_address ./mnist/ --input_height 28 --o
 - You can run the following commands:
 ```
 # for test on UCSD and patch_size 45*45 and some specific dir like ['Test004'], etc. We prefer to open test.py file and edit every thing that you want
-python test.py --dataset UCSD --dataset_address ./UCSD_Anomaly_Dataset.v1p2/UCSDped2/Train --input_height 45 --output_height 45 
+python test.py --dataset UCSD --dataset_address ./dataset/UCSD_Anomaly_Dataset.v1p2/UCSDped2/Train --input_height 45 --output_height 45 
 
 # for test on MNIST
-python test.py --dataset MNIST --dataset_address ./mnist/ --input_height 28 --output_height 28
+python test.py --dataset MNIST --dataset_address ./dataset/mnist/ --input_height 28 --output_height 28
 ```
 
 <hr>
