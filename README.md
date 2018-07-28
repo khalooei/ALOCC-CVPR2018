@@ -57,7 +57,7 @@ tar -xzf UCSD_Anomaly_Dataset.tar.gz
 python train.py --dataset UCSD --dataset_address ./dataset/UCSD_Anomaly_Dataset.v1p2/UCSDped2/Train --input_height 45 --output_height 45 
 
 # for train on MNIST
-python train.py --dataset MNIST --dataset_address ./dataset/mnist/ --input_height 28 --output_height 28
+python train.py --dataset mnist --dataset_address ./dataset/mnist/ --input_height 28 --output_height 28
 ```
 
 - To view training results you can access them from export directory
@@ -69,7 +69,7 @@ python train.py --dataset MNIST --dataset_address ./dataset/mnist/ --input_heigh
 python test.py --dataset UCSD --dataset_address ./dataset/UCSD_Anomaly_Dataset.v1p2/UCSDped2/Train --input_height 45 --output_height 45 
 
 # for test on MNIST
-python test.py --dataset MNIST --dataset_address ./dataset/mnist/ --input_height 28 --output_height 28
+python test.py --dataset mnist --dataset_address ./dataset/mnist/ --input_height 28 --output_height 28
 ```
 
 <hr>
