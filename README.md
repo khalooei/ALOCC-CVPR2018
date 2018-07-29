@@ -108,6 +108,7 @@ Generated:
 
 ## Citation
 If you use this code or idea for your research, please cite our papers.
+
 ```
 @inproceedings{sabokrou2018adversarially,
   title={Adversarially Learned One-Class Classifier for Novelty Detection},
