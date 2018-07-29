@@ -109,20 +109,11 @@ Generated:
 ## Citation
 If you use this code or idea for your research, please cite our papers.
 ```
-@article{DBLP:journals/corr/abs-1802-09088,
-  author    = {Mohammad Sabokrou and
-               Mohammad Khalooei and
-               Mahmood Fathy and
-               Ehsan Adeli},
-  title     = {Adversarially Learned One-Class Classifier for Novelty Detection},
-  journal   = {CoRR},
-  volume    = {abs/1802.09088},
-  year      = {2018},
-  url       = {http://arxiv.org/abs/1802.09088},
-  archivePrefix = {arXiv},
-  eprint    = {1802.09088},
-  timestamp = {Fri, 02 Mar 2018 13:46:22 +0100},
-  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1802-09088},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@inproceedings{sabokrou2018adversarially,
+  title={Adversarially Learned One-Class Classifier for Novelty Detection},
+  author={Sabokrou, Mohammad and Khalooei, Mohammad and Fathy, Mahmood and Adeli, Ehsan},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={3379--3388},
+  year={2018}
 }
 ```
