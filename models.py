@@ -136,12 +136,12 @@ class ALOCC_Model(object):
     #self.G_sum = image_summary("G", self.G)
 
     # Simple GAN's losses
-    self.d_loss_real = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=self.D_logits, logits=tf.ones_like(self.D)))
-    self.d_loss_fake = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=self.D_logits_, logits=tf.zeros_like(self.D_)))
-    self.g_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=self.D_logits_, logits=tf.ones_like(self.D_)))
+    self.d_loss_real = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=self.D_logits, labels=tf.ones_like(self.D)))
+    self.d_loss_fake = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=self.D_logits_, labels=tf.zeros_like(self.D_)))
+    self.g_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=self.D_logits_, labels=tf.ones_like(self.D_)))
 
     # Refinement loss
-    self.g_r_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=self.G,logits=self.z))
+    self.g_r_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=self.G,labels=self.z))
     self.g_loss  = self.g_loss + self.g_r_loss * self.r_alpha
     self.d_loss = self.d_loss_real + self.d_loss_fake
 
