@@ -60,6 +60,25 @@ python train.py --dataset UCSD --dataset_address ./dataset/UCSD_Anomaly_Dataset.
 python train.py --dataset mnist --dataset_address ./dataset/mnist/ --input_height 28 --output_height 28
 ```
 
+
+## ALOCC's Cheet sheet
+Some of our followers said that if ALOCC have any cheet-sheet, it would have more easy for readers and followers do in  their own research or industrials. (Thanks a lot :rose: Andy Steinbach and other followers for mentioning this note item)
+* At first, You must prepare your dataset if you want to use on our work. Therefore, you can look at the code as mentioned like UCSD or MNSIT dataset. If your own dataset is like UCSD or MNSIT, we prefer to do the same step for loading or use better solutions to import as UCSD/MNIST dataset. Then you can name your data set as UCSD/MNIST (for e.g. MyDataSetName as dataset name). It means that you can add loading code of your dataset in `models.py` file from line 180 up to 190 as UCSD/MNIST.
+In this time, you can pass a parameter as bellow :
+```
+--dataset MyDataSetName --dataset_address ./pathOfMyDataSetName
+```
+* You must set your patch_size. It means that your image wants to be sliced into patch_size in array (for e.g. (60,60)) as bellow:
+```
+--input_height 60 --output_height 60
+```
+* To view more parameter of this pseudo implementation, you could follow the 'train.py' file
+* To change some structure or architecture of ALOCC, you can change in `model.py` file. We have some pre/post processing functions in `kh_tools.py` and  `utils.py`. Also we have some abstract function of Conv or any similar functions in `ops.py`. You can change the test process in `test.py` and also `model.py` from line 460 up to the end.
+* If you have any further questions, please don't hesitate to contact me :rose: .
+* Also, contributions are welcome. If you implement our paper in other framework or implementation style, you can contact me to publish your link on this page.
+
+
+<hr>
 - To view training results you can access them from export directory
 
 ### ALOCC test
