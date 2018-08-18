@@ -62,7 +62,7 @@ python train.py --dataset mnist --dataset_address ./dataset/mnist/ --input_heigh
 
 
 ## ALOCC's Cheat sheet
-Some of our followers said that if ALOCC had any cheat-sheet, it would have more easy for readers and followers do in their own research or industries. (Thanks a lot Andy Steinbach and other followers for mentioning this note item)
+Some of our followers said that if ALOCC has any cheat-sheet, it can be more easy for readers and followers do in their own research or industries. (Thanks a lot Andy Steinbach and other followers for mentioning this note item)
 * At first, You must prepare your dataset if you want to use on our work. Therefore, you can look at the code as mentioned like UCSD or MNSIT dataset. If your own dataset is like UCSD or MNSIT, we prefer to do the same step for loading or use better solutions to import as UCSD/MNIST dataset. Then you can name your data set as UCSD/MNIST (for e.g. MyDataSetName as dataset name). It means that you can add loading code of your dataset in `models.py` file from line 180 up to 190 as UCSD/MNIST.
 In this time, you can pass a parameter as bellow :
 ```
