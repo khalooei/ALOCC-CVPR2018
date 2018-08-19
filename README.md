@@ -1,7 +1,7 @@
 # Adversarially Learned One-Class Classifier for Novelty Detection (ALOCC-CVPR2018)
 [[CVPR Poster]](cvpr18_poster_ALOCC.pdf) [[Project]](https://github.com/khalooei/ALOCC-CVPR2018) [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sabokrou_Adversarially_Learned_One-Class_CVPR_2018_paper.pdf)
 
-As you know, this work inspired by the success of generative adversarial networks for training deep models in unsupervised and semi-supervised settings,we propose an end-to-end architecture for one-class classification. Our architecture is composed of two deep networks, each of which trained by competing with each other while collaborating to understand the underlying concept in the target class, and then classify the testing samples. One network works as the novelty detector, while the other supports it by enhancing the inlier samples and distorting the outliers. The intuition is that the separability of the enhanced inliers and distorted outliers is much better than deciding on the original samples. 
+This work was inspired by the success of generative adversarial networks (GANs) for training deep models in unsupervised and semi-supervised settings. We proposed an end-to-end architecture for one-class classification. The architecture is composed of two deep networks, each of which trained by competing with each other while collaborating to understand the underlying concept in the target class, and then classify the testing samples. One network works as the novelty detector, while the other supports it by enhancing the inlier samples and distorting the outliers. The intuition is that the separability of the enhanced inliers and distorted outliers is much better than deciding on the original samples.
 
 Here is the preliminary version of the code on grayscale databases. 
 
@@ -64,23 +64,23 @@ python train.py --dataset mnist --dataset_address ./dataset/mnist/ --input_heigh
 
 ## ALOCC's Cheat sheet
 Some of our followers said that if ALOCC has any cheat-sheet, it can be more easy for readers and followers do in their own research or industries.
-* At first, You must prepare your dataset if you want to use on our work. Therefore, you can look at the code as mentioned like UCSD or MNSIT dataset. If your own dataset is like UCSD or MNSIT, we prefer to do the same step for loading or use better solutions to import as UCSD/MNIST dataset. Then you can name your data set as UCSD/MNIST (for e.g. MyDataSetName as dataset name). It means that you can add loading code of your dataset in `models.py` file from line 180 up to 190 as UCSD/MNIST.
-In this time, you can pass a parameter as bellow :
+* First, prepare your dataset similar to what we did for UCSD or MNSIT datasets in the code. Then, add the data loading code in models.py file from line 180 up to 190 as UCSD/MNIST.
+You can pass a parameter as bellow:
 ```
 --dataset MyDataSetName --dataset_address ./pathOfMyDataSetName
 ```
-* You must set your patch_size. It means that your image wants to be sliced into patch_size in array (for e.g. (60,60)) as bellow:
+* Set the patch size:
 ```
 --input_height 60 --output_height 60
 ```
-* To view more parameter of this pseudo implementation, you could follow the 'train.py' file
-* To change some structure or architecture of ALOCC, you can change in `model.py` file. We have some pre/post processing functions in `kh_tools.py` and  `utils.py`. Also we have some abstract function of Conv or any similar functions in `ops.py`. You can change the test process in `test.py` and also `model.py` from line 460 up to the end.
+* See the 'train.py' file, for other hyperparameters of the method, and set them if need be. 
+* To change architectures of submodules in ALOCC, refer to the model.py file. We have some pre/post processing functions in kh_tools.py and utils.py. Also, we have some abstract function of Conv or similar functions in ops.py. You can change the test process in test.py and also model.py from line 460 to the end.
 * If you have any further questions, please don't hesitate to contact me :rose: .
 * Also, contributions are welcome. If you implement our paper in other framework or implementation style, you can contact me to publish your link on this page.
 
 
 <hr>
-- To view training results you can access them from export directory
+- To view the training results, access them within the export directory.
 
 ### ALOCC test
 - You can run the following commands:
