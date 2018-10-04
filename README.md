@@ -1,5 +1,5 @@
 # Adversarially Learned One-Class Classifier for Novelty Detection (ALOCC-CVPR2018)
-[[CVPR Poster]](cvpr18_poster_ALOCC.pdf) [[Project]](https://github.com/khalooei/ALOCC-CVPR2018) [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sabokrou_Adversarially_Learned_One-Class_CVPR_2018_paper.pdf)
+[[CVPR Poster]](cvpr18_poster_ALOCC.pdf) [[Project]](https://github.com/khalooei/ALOCC-CVPR2018) [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sabokrou_Adversarially_Learned_One-Class_CVPR_2018_paper.pdf) [[tensorflow code]](https://github.com/khalooei/ALOCC-CVPR2018) [[keras code]](https://github.com/Tony607/ALOCC_Keras)
 
 This work was inspired by the success of generative adversarial networks (GANs) for training deep models in unsupervised and semi-supervised settings. We proposed an end-to-end architecture for one-class classification. The architecture is composed of two deep networks, each of which trained by competing with each other while collaborating to understand the underlying concept in the target class, and then classify the testing samples. One network works as the novelty detector, while the other supports it by enhancing the inlier samples and distorting the outliers. The intuition is that the separability of the enhanced inliers and distorted outliers is much better than deciding on the original samples.
 
